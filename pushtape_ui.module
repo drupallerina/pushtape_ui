@@ -306,7 +306,7 @@ function pushtape_ui_node_load($nodes, $types) {
   foreach ($nodes as $node) {
     if ($node->type == 'track') {
       if (!empty($node->field_album)) {
-        $album = node_load($node->field_album[LANGUAGE_NONE][0]['nid']);
+        $album = node_load($node->field_album[LANGUAGE_NONE][0]['target_id']);
         $pushtape_ui_override = array();
         if (empty($node->field_artwork)) {
           $node->field_artwork = $album->field_artwork;
