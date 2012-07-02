@@ -177,7 +177,7 @@ function pushtape_ui_album_node_form_submit($form, &$form_state) {
 
 
 /**
-  * Implements hook_menu_alter()
+  * Implements hook_menu_alter().
   * Remember to clear the menu cache after adding/editing this function.
   */
 function pushtape_ui_menu_alter(&$items) {
@@ -188,7 +188,7 @@ function pushtape_ui_menu_alter(&$items) {
 
 
 /**
- * Implements hook_theme()
+ * Implements hook_theme().
  */
 function pushtape_ui_theme() {
   return array(
