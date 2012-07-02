@@ -10,3 +10,6 @@ dependencies[] = features
 dependencies[] = "pushtape_discography"
 stylesheets[all][] = css/pushtape.css
 scripts[] = js/pushtape.js
+files[] = pushtape_core.module
+files[] = css/pushtape.css
+files[] = js/pushtape.js
