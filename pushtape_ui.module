@@ -91,7 +91,7 @@ function pushtape_ui_form_alter(&$form, &$form_state, $form_id) {
  */
 function pushtape_ui_track_node_form_validate($form, &$form_state) {
   /* We need to force an album here. */
-  if ($form['field_album_checkbox']['#value'] == 1 && empty($form_state['values']['new_album']) && !is_numeric($form_state['values']['field_album'][LANGUAGE_NONE][0]['nid'])) {
+  if ($form['field_album_checkbox']['#value'] == 1 && empty($form_state['values']['new_album']) && !is_numeric($form_state['values']['field_album'][LANGUAGE_NONE][0]['target_id'])) {
     form_set_error('new_album', t('Please enter a name for your new album.'));
   }
   if ($form['field_album_checkbox']['#value'] == 0) {
