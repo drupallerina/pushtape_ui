@@ -341,13 +341,17 @@ function pushtape_ui_node_load($nodes, $types) {
           $node->field_artwork = $album->field_artwork;
           $pushtape_ui_override[] = 'field_artwork';
         }
-        if (empty($node->field_artist_term)) {
+        if (!empty($album->field_artist_term)) {
+          if (empty($node->field_artist_term)) {
           $node->field_artist_term = $album->field_artist_term;
           $pushtape_ui_override[] = 'field_artist_term';
+          }
         }
-        if (empty($node->field_release_date)) {
+         if (!empty($album->field_release_date)) {
+             if (empty($node->field_release_date)) {
           $node->field_release_date = $album->field_release_date;
           $pushtape_ui_override[] = 'field_release_date';
+           }
         }
         $node->pushtape_ui_override = $pushtape_ui_override;
       }
